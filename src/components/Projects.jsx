@@ -1,4 +1,3 @@
-import React from "react";
 
 function Projects() {
   return (
@@ -11,7 +10,7 @@ function Projects() {
         </h1>
       </div>
 
-      <div className="grid xs:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-4 md:gap-8">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-8">
         <div className="project">
           <img
             src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"

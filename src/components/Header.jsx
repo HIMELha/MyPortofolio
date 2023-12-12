@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import {Link} from 'react-router-dom'
 function Header() {
+  const [nav, setNav] = useState(false);
+
   return (
     <header className="px-[5%] py-[10px] flex justify-between items-center shadow-sm border">
       <Link
@@ -36,9 +39,57 @@ function Header() {
           </Link>
         </li>
       </ul>
-      <button className="btn">
-        <Link to="/contact">Contact Me</Link>
-      </button>
+
+      {nav && (
+        <ul className="flex flex-col justify-center items-center gap-8 bg-slate-800 overflow-hidden fixed top-0 bottom-0 left-0 right-0 z-10 sm:hidden">
+          <button
+            onClick={() => setNav(false)}
+            className="social-btn bg-slate-600 !rounded-full hover:bg-zinc-800  hover:border sm:hidden absolute top-4 right-4"
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </button>
+          <li>
+            <Link
+              onClick={() => setNav(false)}
+              to="/about"
+              className="px-2 py-[6px] text-xl text-left text-gray-200 font-medium hover:text-slate-300"
+            >
+              About Me
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setNav(false)}
+              to="/skills"
+              className="px-2 py-[6px] text-xl text-left text-gray-200 font-medium hover:text-slate-300"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={() => setNav(false)}
+              to="/projects"
+              className="px-2 py-[6px] text-xl text-left text-gray-200 font-medium hover:text-slate-300"
+            >
+              Projects
+            </Link>
+          </li>
+        </ul>
+      )}
+
+      <div className="flex gap-4 sm:gap-0">
+        <button className="btn ">
+          <Link to="/contact">Contact Me</Link>
+        </button>
+
+        <button
+          onClick={() => setNav(true)}
+          className="social-btn bg-slate-600 hover:bg-slate-800 sm:hidden"
+        >
+          <i className="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
     </header>
   );
 }
