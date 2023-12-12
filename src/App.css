@@ -1,0 +1,62 @@
+/* Import Tailwind CSS styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;;
+}
+.btn {
+    @apply px-3 py-[7px] bg-gradient-to-bl from-blue-700 to-sky-600 text-[15px] text-white rounded-md hover:from-blue-600 hover:to-sky-700
+}
+.hero {
+    @apply bg-gradient-to-tr h-full md:min-h-[90vh] 
+}
+.easeIn {
+    animation: easein 0.4s ease-in-out infinite  ;
+}
+.social-btn {
+    @apply text-white rounded-sm w-[40px] h-[40px]  flex justify-center items-center
+}
+
+.card {
+    @apply px-3 py-2 flex col-span-8 sm:col-span-4 md:col-span-4 border flex-row shadow-sm rounded-md border-slate-300 gap-4 items-center;
+    box-shadow: 2px 2px #575F6F ;
+}
+.ssdow {
+    box-shadow: 4px 4px #002236;
+}
+.project {
+    @apply border rounded-md;
+    box-shadow: 4px 4px #002236;
+}
+
+
+.cardImage{
+    @apply w-16 h-16 
+}
+
+.icon {
+    @apply mr-1 
+}
+.tags {
+    @apply px-[6px] py-[2px] text-[14px] rounded  cursor-pointer
+}
+
+@keyframes easein {
+    0% {
+        top: 0px;
+    }
+    25% {
+        top: 2px;
+    }
+    50% {
+        top: 4px;
+    }
+    
+    100% {
+        top: 2px;
+    }
+}
