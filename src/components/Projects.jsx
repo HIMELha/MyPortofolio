@@ -1,7 +1,6 @@
-
 function Projects() {
   return (
-    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] from-gray-100 to-slate-50 ">
+    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] from-gray-200 to-slate-100 ">
       <div className="w-full mb-6">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
@@ -10,41 +9,52 @@ function Projects() {
         </h1>
       </div>
 
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-8">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-7">
         <div className="project">
           <img
-            src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"
+            src="https://i.ibb.co/4dnsbfx/Thank-You-For-view-my-all-projects-1.png"
             alt=""
-            className="w-full rounded-tr-md"
+            className="w-full rounded-tr-md lg:max-h-[240px]"
           />
           <div className="flex flex-col px-3 py-2">
             <h2 className="text-xl font-medium text-slate-800">
-              Template design
+              LaraShop - simple ecommerce website
             </h2>
 
-            <div className="flex gap-2 justify-start items-center flex-wrap mt-2">
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
               <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-laravel icon"></i>Laravel
+                <i className="fa-brands fa-html5 icon"></i>HTML
               </span>
               <span className="tags bg-blue-500 text-white">
                 <i className="fa-brands fa-css3 icon"></i>TailwindCSS
               </span>
-              <span className="tags bg-sky-500 text-white">
-                <i className="fa-brands fa-react icon"></i>ReactJS
+
+              <span className="tags bg-yellow-600 text-white">
+                <i className="fa-brands fa-node-js icon"></i>Javascript
+              </span>
+              <span className="tags bg-yellow-500 text-white">
+                <i className="fa-brands fa-js icon"></i>Jquery
+              </span>
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-laravel icon"></i>Laravel
               </span>
               <span className="tags bg-orange-600 text-white">
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-html5 icon"></i>HTML5
-              </span>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-4 justify-center items-center flex-wrap">
-              <button className="btn !rounded-full">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() => window.open("https://postbd.xyz/pay_commerce/")}
+              >
                 <i className="fa-solid fa-up-right-from-square icon"></i>Preview
               </button>
-              <button className="btn !rounded-full">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/Laravel_Ecommerce")
+                }
+              >
                 <i className="fa-brands fa-github icon"></i>Github
               </button>
             </div>
@@ -53,21 +63,24 @@ function Projects() {
 
         <div className="project">
           <img
-            src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"
+            src="https://i.ibb.co/s69RFmd/Untitled-design.png"
             alt=""
-            className="w-full rounded-tr-md"
+            className="w-full rounded-tr-md lg:max-h-[240px]"
           />
           <div className="flex flex-col px-3 py-2">
             <h2 className="text-xl font-medium text-slate-800">
-              Template design
+              React & Laravel CRUD App
             </h2>
 
-            <div className="flex gap-2 justify-start items-center flex-wrap mt-2">
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
               <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-laravel icon"></i>Laravel
+                <i className="fa-brands fa-html5 icon"></i>HTML
               </span>
               <span className="tags bg-blue-500 text-white">
                 <i className="fa-brands fa-css3 icon"></i>TailwindCSS
+              </span>
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-laravel icon"></i>Laravel
               </span>
               <span className="tags bg-sky-500 text-white">
                 <i className="fa-brands fa-react icon"></i>ReactJS
@@ -75,16 +88,22 @@ function Projects() {
               <span className="tags bg-orange-600 text-white">
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-html5 icon"></i>HTML5
-              </span>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-4 justify-center items-center flex-wrap">
-              <button className="btn !rounded-full">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://react-crud-lilac.vercel.app/")
+                }
+              >
                 <i className="fa-solid fa-up-right-from-square icon"></i>Preview
               </button>
-              <button className="btn !rounded-full">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/ReactCrud")
+                }
+              >
                 <i className="fa-brands fa-github icon"></i>Github
               </button>
             </div>
@@ -93,77 +112,44 @@ function Projects() {
 
         <div className="project">
           <img
-            src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"
+            src="https://i.ibb.co/SBY5Kq7/Untitled-design-6.png"
             alt=""
-            className="w-full rounded-tr-md"
+            className="w-full rounded-tr-md lg:max-h-[240px]"
           />
           <div className="flex flex-col px-3 py-2">
             <h2 className="text-xl font-medium text-slate-800">
-              Template design
+              Laravel blog website
             </h2>
 
-            <div className="flex gap-2 justify-start items-center flex-wrap mt-2">
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-html5 icon"></i>HTML
+              </span>
               <span className="tags bg-red-500 text-white">
                 <i className="fa-brands fa-laravel icon"></i>Laravel
               </span>
               <span className="tags bg-blue-500 text-white">
                 <i className="fa-brands fa-css3 icon"></i>TailwindCSS
               </span>
-              <span className="tags bg-sky-500 text-white">
-                <i className="fa-brands fa-react icon"></i>ReactJS
-              </span>
               <span className="tags bg-orange-600 text-white">
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-html5 icon"></i>HTML5
-              </span>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-4 justify-center items-center flex-wrap">
-              <button className="btn !rounded-full">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://postbd.xyz/laratail/public/home")
+                }
+              >
                 <i className="fa-solid fa-up-right-from-square icon"></i>Preview
               </button>
-              <button className="btn !rounded-full">
-                <i className="fa-brands fa-github icon"></i>Github
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="project">
-          <img
-            src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"
-            alt=""
-            className="w-full rounded-tr-md"
-          />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
-              Template design
-            </h2>
-
-            <div className="flex gap-2 justify-start items-center flex-wrap mt-2">
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-laravel icon"></i>Laravel
-              </span>
-              <span className="tags bg-blue-500 text-white">
-                <i className="fa-brands fa-css3 icon"></i>TailwindCSS
-              </span>
-              <span className="tags bg-sky-500 text-white">
-                <i className="fa-brands fa-react icon"></i>ReactJS
-              </span>
-              <span className="tags bg-orange-600 text-white">
-                <i className="fa-solid fa-database icon"></i>MySQL
-              </span>
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-html5 icon"></i>HTML5
-              </span>
-            </div>
-            <hr className="my-2" />
-            <div className="flex gap-4 justify-center items-center flex-wrap">
-              <button className="btn !rounded-full">
-                <i className="fa-solid fa-up-right-from-square icon"></i>Preview
-              </button>
-              <button className="btn !rounded-full">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/Laratail")
+                }
+              >
                 <i className="fa-brands fa-github icon"></i>Github
               </button>
             </div>
@@ -172,38 +158,182 @@ function Projects() {
 
         <div className="project">
           <img
-            src="https://venngage-wordpress.s3.amazonaws.com/uploads/2015/06/customize-infographic-templates-header.png"
+            src="https://i.ibb.co/YcbSsxz/Untitled-design-5.png"
             alt=""
-            className="w-full rounded-tr-md"
+            className="w-full rounded-tr-md lg:max-h-[240px]"
           />
           <div className="flex flex-col px-3 py-2">
             <h2 className="text-xl font-medium text-slate-800">
-              Template design
+              BookStore - landing page for bookshop
             </h2>
 
-            <div className="flex gap-2 justify-start items-center flex-wrap mt-2">
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
               <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-laravel icon"></i>Laravel
+                <i className="fa-brands fa-html5 icon"></i>HTML
+              </span>
+              <span className="tags bg-blue-500 text-white">
+                <i className="fa-brands fa-css3 icon"></i>Vanila CSS
+              </span>
+              <span className="tags bg-yellow-600 text-white">
+                <i className="fa-brands fa-js icon"></i>Javascript
+              </span>
+              <span className="tags bg-purple-500 text-white">
+                <i className="fa-solid fa-sliders icon"></i>Sliders
+              </span>
+            </div>
+
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://himelha.github.io/BookStore/")
+                }
+              >
+                <i className="fa-solid fa-up-right-from-square icon"></i>Preview
+              </button>
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/BookStore")
+                }
+              >
+                <i className="fa-brands fa-github icon"></i>Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="project">
+          <img
+            src="https://i.ibb.co/wBT4sGc/Untitled-design-2.png"
+            alt=""
+            className="w-full rounded-tr-md lg:max-h-[240px]"
+          />
+          <div className="flex flex-col px-3 py-2">
+            <h2 className="text-xl font-medium text-slate-800">
+              Vehicle website landing page
+            </h2>
+
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-html5 icon"></i>HTML
+              </span>
+              <span className="tags bg-blue-500 text-white">
+                <i className="fa-brands fa-css3 icon"></i>Vanila CSS
+              </span>
+              <span className="tags bg-yellow-600 text-white">
+                <i className="fa-brands fa-js icon"></i>Javascript
+              </span>
+            </div>
+
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open(
+                    "https://himelha.github.io/vehicles-Landing-Page/"
+                  )
+                }
+              >
+                <i className="fa-solid fa-up-right-from-square icon"></i>Preview
+              </button>
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open(
+                    "https://github.com/HIMELha/vehicles-Landing-Page"
+                  )
+                }
+              >
+                <i className="fa-brands fa-github icon"></i>Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="project">
+          <img
+            src="https://i.ibb.co/g97vrs3/Untitled-design-7.png"
+            alt=""
+            className="w-full rounded-tr-md lg:max-h-[240px]"
+          />
+          <div className="flex flex-col px-3 py-2">
+            <h2 className="text-xl font-medium text-slate-800">
+              Vertax Portfolio
+            </h2>
+
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-html5 icon"></i>HTML
+              </span>
+              <span className="tags bg-blue-500 text-white">
+                <i className="fa-brands fa-css3 icon"></i>Vanila CSS
+              </span>
+              <span className="tags bg-yellow-600 text-white">
+                <i className="fa-brands fa-js icon"></i>Javascript
+              </span>
+            </div>
+
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://himelha.github.io/portfolio/")
+                }
+              >
+                <i className="fa-solid fa-up-right-from-square icon"></i>Preview
+              </button>
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/portfolio")
+                }
+              >
+                <i className="fa-brands fa-github icon"></i>Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="project">
+          <img
+            src="https://i.ibb.co/99Gs6Wr/Untitled-design-4.png"
+            alt=""
+            className="w-full rounded-tr-md lg:max-h-[240px]"
+          />
+
+          <div className="flex flex-col px-3 py-2">
+            <h2 className="text-xl font-medium text-slate-800">
+              LTEAdmin - admin panel template
+            </h2>
+
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-html5 icon"></i>HTML
               </span>
               <span className="tags bg-blue-500 text-white">
                 <i className="fa-brands fa-css3 icon"></i>TailwindCSS
               </span>
-              <span className="tags bg-sky-500 text-white">
-                <i className="fa-brands fa-react icon"></i>ReactJS
-              </span>
-              <span className="tags bg-orange-600 text-white">
-                <i className="fa-solid fa-database icon"></i>MySQL
-              </span>
-              <span className="tags bg-red-500 text-white">
-                <i className="fa-brands fa-html5 icon"></i>HTML5
+              <span className="tags bg-yellow-600 text-white">
+                <i className="fa-brands fa-js icon"></i>Javascript
               </span>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-4 justify-center items-center flex-wrap">
-              <button className="btn !rounded-full">
+
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://himelha.github.io/adminLte/src/")
+                }
+              >
                 <i className="fa-solid fa-up-right-from-square icon"></i>Preview
               </button>
-              <button className="btn !rounded-full">
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/adminLte")
+                }
+              >
                 <i className="fa-brands fa-github icon"></i>Github
               </button>
             </div>

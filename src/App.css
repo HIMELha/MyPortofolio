@@ -12,7 +12,7 @@
     @apply px-3 py-[7px] bg-gradient-to-bl from-blue-700 to-sky-600 text-[15px] text-white rounded-md hover:from-blue-600 hover:to-sky-700
 }
 .hero {
-    @apply bg-gradient-to-tr h-full md:min-h-[90vh] 
+    @apply bg-gradient-to-tr h-full md:min-h-[90vh]
 }
 .easeIn {
     animation: easein 0.4s ease-in-out infinite  ;
@@ -29,7 +29,7 @@
     box-shadow: 4px 4px #002236;
 }
 .project {
-    @apply border rounded-md;
+    @apply bg-white border rounded-md flex flex-col justify-start relative;
     box-shadow: 4px 4px #002236;
 }
 

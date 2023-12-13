@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-    <div className="max-w-[1200px] mx-auto overflow-hidden">
+    <div className="max-w-[1400px] mx-auto overflow-hidden">
       <Header />
 
       <Routes>
