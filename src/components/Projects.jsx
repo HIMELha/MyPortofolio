@@ -12,7 +12,7 @@ function Projects() {
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-7">
         <div className="project">
           <img
-            src="https://i.ibb.co/gycdkqv/image.png"
+            src="https://i.ibb.co/ThzymtS/Thank-You-For-view-my-all-projects.png"
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />

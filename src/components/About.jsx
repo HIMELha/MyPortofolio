@@ -1,7 +1,7 @@
 import prfileImage from "../assets/image.jpg";
 function About() {
   return (
-    <div className="px-[3%] py-4 hero !h-full   grid lg:grid-cols-2  ">
+    <div className="px-[3%] py-4 hero !h-full grid lg:grid-cols-2 items-start justify-center">
       <div className="grid col-span-2 mb-6">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
@@ -54,7 +54,7 @@ function About() {
           alt=""
           className="rounded-md w-[300px] h-[300px] md:w-[380px] md:h-[380px]  shadow-slate-500 shadow-md borderN"
         />
-        <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-0">
+        <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-10">
           <button className="social-btn bg-blue-500">
             <i className="fa-brands fa-facebook  text-xl"></i>
           </button>
