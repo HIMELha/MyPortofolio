@@ -1,7 +1,7 @@
 
 function Skills() {
   return (
-    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] from-gray-100 to-slate-50 ">
+    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh]  ">
       <div className="w-full mb-6">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">

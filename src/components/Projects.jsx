@@ -1,6 +1,6 @@
 function Projects() {
   return (
-    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] from-gray-200 to-slate-100 ">
+    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] ">
       <div className="w-full mb-6">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
@@ -10,6 +10,51 @@ function Projects() {
       </div>
 
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-7">
+        <div className="project">
+          <img
+            src="https://i.ibb.co/gycdkqv/image.png"
+            alt=""
+            className="w-full rounded-tr-md lg:max-h-[240px]"
+          />
+          <div className="flex flex-col px-3 py-2">
+            <h2 className="text-xl font-medium text-slate-800">
+              RefferAi - refferal system
+            </h2>
+
+            <div className="flex gap-2 justify-start items-center flex-wrap mt-2 mb-12">
+              <span className="tags bg-red-500 text-white">
+                <i className="fa-brands fa-html5 icon"></i>HTML
+              </span>
+              <span className="tags bg-blue-500 text-white">
+                <i className="fa-brands fa-css3 icon"></i>TailwindCSS
+              </span>
+
+              <span className="tags bg-[#8040e7] text-white">
+                <i className="fa-brands fa-php icon"></i>PHP
+              </span>
+
+              <span className="tags bg-orange-600 text-white">
+                <i className="fa-solid fa-database icon"></i>MySQL
+              </span>
+            </div>
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+              <button
+                className="btn !rounded-full"
+                onClick={() => window.open("https://refferai.postbd.xyz/")}
+              >
+                <i className="fa-solid fa-up-right-from-square icon"></i>Preview
+              </button>
+              <button
+                className="btn !rounded-full"
+                onClick={() =>
+                  window.open("https://github.com/HIMELha/refferAi")
+                }
+              >
+                <i className="fa-brands fa-github icon"></i>Github
+              </button>
+            </div>
+          </div>
+        </div>
         <div className="project">
           <img
             src="https://i.ibb.co/4dnsbfx/Thank-You-For-view-my-all-projects-1.png"

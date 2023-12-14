@@ -4,7 +4,7 @@ function Header() {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="px-[5%] py-[10px] flex justify-between items-center shadow-sm border">
+    <header className="px-[5%] py-[10px] flex justify-between items-center shadow-sm">
       <Link
         to="/"
         className="text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-blue-700 to-slate-800"

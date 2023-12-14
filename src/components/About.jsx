@@ -1,7 +1,7 @@
 import prfileImage from "../assets/image.jpg";
 function About() {
   return (
-    <div className="px-[3%] py-4 hero !h-full  from-gray-100 to-slate-50 grid lg:grid-cols-2  ">
+    <div className="px-[3%] py-4 hero !h-full   grid lg:grid-cols-2  ">
       <div className="grid col-span-2 mb-6">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
@@ -41,18 +41,18 @@ function About() {
 
         <span className="px-2 py-[6px] text-[14px] rounded-sm mt-3  bg-blue-200 border border-sky-400">
           <i className="fa-solid fa-triangle-exclamation text-blue-600 mr-1"></i>
-          I&apos;m facing financial challenges, I&apos;m a dedicated Laravel developer
-          delivering efficient code. Hiring me brings technical proficiency and
-          a committed partner invested in your project&apos;s success.
-          Let&apos;s connect and achieve your goals together.
+          I&apos;m facing financial challenges, I&apos;m a dedicated Laravel
+          developer delivering efficient code. Hiring me brings technical
+          proficiency and a committed partner invested in your project&apos;s
+          success. Let&apos;s connect and achieve your goals together.
         </span>
       </div>
 
-      <div className="grid col-span-2 lg:col-span-1 justify-center relative order-0">
+      <div className="grid col-span-2 lg:col-span-1 justify-center relative order-0 ">
         <img
           src={prfileImage}
           alt=""
-          className="rounded-md w-[300px] h-[300px] md:w-[380px] md:h-[380px]  shadow-slate-500 shadow-md"
+          className="rounded-md w-[300px] h-[300px] md:w-[380px] md:h-[380px]  shadow-slate-500 shadow-md borderN"
         />
         <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-0">
           <button className="social-btn bg-blue-500">

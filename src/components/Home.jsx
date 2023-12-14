@@ -4,7 +4,7 @@ function Home() {
   const [tank, setTank] = useState(false);
 
   return (
-    <div className="px-[3%] py-4 hero  from-gray-100 to-slate-50 grid md:grid-cols-2 justify-center items-center ">
+    <div className="px-[3%] py-4 hero   grid md:grid-cols-2 justify-center items-center ">
       <div className="flex justify-start flex-col order-1 md:order-0">
         <h1 className="text-3xl leading-12 ">
           Hey there 👋 <br />
@@ -13,8 +13,7 @@ function Home() {
           </span>
         </h1>
         <p className="text-[18px] text-slate-800 mt-3">
-          A proffessional web developer, video editor <br /> Nasa hacker and
-          many more
+          I develop and build websites using power of Laravel , ReactJS and TailwindCSS
         </p>
 
         <div className="flex gap-4 mt-8">
@@ -34,7 +33,7 @@ function Home() {
         <img
           src={prfileImage}
           alt=""
-          className="rounded-full w-[300px] h-[300px] md:w-[380px] md:h-[380px] my-10 md:my-0 shadow-slate-500 shadow-md"
+          className="rounded-md w-[300px] h-[300px] md:w-[380px] md:h-[380px] my-10 md:my-0 shadow-slate-500 shadow-md borderN"
         />
         <div
           className="box absolute !bottom-[100px] left-10 w-8 h-0 
