@@ -123,7 +123,9 @@ function Skills() {
             className="cardImage !w-[72px]"
           />
           <div className="flex flex-col items-start gap-1">
-            <h2 className="text-left text-2xl text-slate-800">PHP 8.4</h2>
+            <h2 className="text-left text-2xl text-slate-800">
+              PHP 8.2 <span className="btn">looking for 8.4 👀</span>
+            </h2>
             <span className="text-[12px] sm:text-[13px] ">
               PHP is a server-side scripting language, empowering dynamic web
               content and enabling seamless server logic integration in web

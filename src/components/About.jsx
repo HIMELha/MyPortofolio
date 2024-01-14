@@ -39,12 +39,13 @@ function About() {
           environments and value teamwork to deliver high-quality results.
         </p>
 
-        <span className="px-2 py-[6px] text-[14px] rounded-sm mt-3  bg-blue-200 border border-sky-400">
+        <span className="px-2 py-[6px] text-[14px] rounded-sm mt-3 text-blue-900 bg-blue-100 border border-sky-400">
           <i className="fa-solid fa-triangle-exclamation text-blue-600 mr-1"></i>
           I&apos;m facing financial challenges, I&apos;m a dedicated Laravel
           developer delivering efficient code. Hiring me brings technical
           proficiency and a committed partner invested in your project&apos;s
-          success. Let&apos;s connect and achieve your goals together.
+          success. Let&apos;s connect and achieve your goals together. <br /> I&apos;m
+          busy now to escape from the toxic society and toxic peoples
         </span>
       </div>
 
