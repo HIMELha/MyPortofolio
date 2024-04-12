@@ -10,7 +10,7 @@ function About() {
         </h1>
       </div>
       <div className="flex col-span-2 lg:col-span-1 sm:w-[600px] lg:max-w-full sm:mx-auto mt-8 lg:mt-0 justify-start !items-start flex-col order-1 ">
-        <h1 className="text-xl leading-12 ">
+        <h1 className="text-xl leading-12 mt-1 ">
           <span className="text-[22px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
             I&apos;m Himel Hasan
           </span>

@@ -3,6 +3,7 @@ export default {
   content: [
     "index.html",
     "src/**/**"],
+  darkMode: 'class',
   theme: {
     extend: {
       screens: {

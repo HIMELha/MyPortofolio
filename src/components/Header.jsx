@@ -1,13 +1,15 @@
-import { useState } from 'react';
-import {Link} from 'react-router-dom'
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import DarkModeToggle from "./DarkMode";
 function Header() {
   const [nav, setNav] = useState(false);
-
+ 
+  
   return (
-    <header className="px-[5%] py-[10px] flex justify-between items-center shadow-sm">
+    <header className="px-[5%] py-[10px] flex justify-between items-center shadow shadow-sky-300  dark:text-white dark:bg-slate-900">
       <Link
         to="/"
-        className="text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-blue-700 to-slate-800"
+        className="text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-blue-700 to-slate-800 dark:text-sky-300"
         style={{ fontFamily: "Jost" }}
       >
         Himel Hasan
@@ -17,7 +19,7 @@ function Header() {
         <li>
           <Link
             to="/about"
-            className="px-2 py-[6px] text-gray-700 font-medium hover:text-slate-600"
+            className="px-2 py-[6px] text-gray-700 font-medium dark:text-blue-300 dark:hover:text-slate-400 hover:text-slate-700"
           >
             About Me
           </Link>
@@ -25,7 +27,7 @@ function Header() {
         <li>
           <Link
             to="/skills"
-            className="px-2 py-[6px] text-gray-700 font-medium hover:text-slate-600"
+            className="px-2 py-[6px] text-gray-700 font-medium dark:text-blue-300 dark:hover:text-slate-400 hover:text-slate-700"
           >
             Skills
           </Link>
@@ -33,7 +35,7 @@ function Header() {
         <li>
           <Link
             to="/projects"
-            className="px-2 py-[6px] text-gray-700 font-medium hover:text-slate-600"
+            className="px-2 py-[6px] text-gray-700 font-medium dark:text-blue-300 dark:hover:text-slate-400  hover:text-slate-700"
           >
             Projects
           </Link>
@@ -78,7 +80,7 @@ function Header() {
         </ul>
       )}
 
-      <div className="flex gap-4 sm:gap-0">
+      <div className="flex gap-4 sm:gap-3">
         <button className="btn ">
           <Link to="/contact">Contact Me</Link>
         </button>
@@ -89,6 +91,10 @@ function Header() {
         >
           <i className="fa-solid fa-bars-staggered"></i>
         </button>
+
+        <div id="ModeToggler">
+          <DarkModeToggle />
+        </div>
       </div>
     </header>
   );

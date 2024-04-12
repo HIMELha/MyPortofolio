@@ -2,17 +2,17 @@ import prfileImage from "../assets/image.jpg";
 function Home() {
 
   return (
-    <div className="px-[3%] py-4 hero   grid md:grid-cols-2 justify-center items-center ">
+    <div className="px-[3%] py-4 hero  grid md:grid-cols-2 justify-center items-center ">
       <div className="flex justify-start flex-col order-1 md:order-0">
         <h1 className="text-3xl leading-12 mb-2">
           <span className="mb-1">
             Hey there 👋 <br />
           </span>
-          <span className="text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
+          <span className="text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-slate-800 to-gray-400 dark:text-slate-300">
             I&apos;m Himel Hasan
           </span>
         </h1>
-        <p className="text-[18px] text-slate-800 mt-3">
+        <p className="text-[18px] text-slate-800 mt-3 dark:text-white">
           I can develop and build websites using power of Laravel , ReactJS and
           TailwindCSS 💪
         </p>
