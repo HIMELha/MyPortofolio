@@ -19,7 +19,19 @@
 }
 
 .btn {
-  @apply px-3 py-[9px] bg-gradient-to-bl from-yellow-600 to-red-400 text-[15px] text-white rounded-3xl hover:from-blue-600 hover:to-sky-600;
+  @apply px-3 py-2 bg-gradient-to-bl border-[2px] border-transparent from-sky-500 to-blue-600 text-[15px] text-white rounded hover:from-transparent hover:to-transparent transition-colors transition-opacity  hover:border-sky-400 hover:text-slate-800 dark:hover:text-white;
+}
+
+.btn-outline {
+  @apply px-3 py-2 border-[2px] border-slate-500 text-[15px] text-slate-800 rounded  dark:text-white dark:border-gray-300 hover:text-slate-900 hover:shadow;
+}
+
+.headingText {
+  @apply text-[40px] font-medium bg-clip-text text-transparent bg-gradient-to-br from-sky-600 to-green-600 dark:from-sky-400 dark:to-slate-500
+}
+
+.maxWidth {
+  @apply max-w-[1400px] mx-auto overflow-hidden
 }
 
 .textGradient {
