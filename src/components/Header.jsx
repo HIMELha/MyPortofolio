@@ -81,10 +81,11 @@ function Header() {
           </ul>
         )}
 
-        <div className="flex gap-4 sm:gap-3">
-          <button className="btn !py-[6px]">
-            <Link to="/contact">Contact Me</Link>
-          </button>
+        <div className="flex gap-4 sm:gap-3 items-center">
+          <Link to='/contact'>
+            <button className="btn !py-[6px]">Contact Me</button>
+          </Link>
+
           <DarkModeToggle />
           <button
             onClick={() => setNav(true)}

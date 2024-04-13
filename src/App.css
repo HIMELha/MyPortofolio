@@ -30,12 +30,14 @@
   @apply text-[40px] font-medium bg-clip-text text-transparent bg-gradient-to-br from-sky-600 to-green-600 dark:from-sky-400 dark:to-slate-500
 }
 
+
+
 .maxWidth {
-  @apply max-w-[1400px] mx-auto overflow-hidden
+  @apply max-w-[1500px] mx-auto overflow-hidden
 }
 
 .textGradient {
-  @apply text-sky-600;
+  @apply text-[25px] font-medium bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-slate-800 dark:from-sky-400 dark:to-blue-600;
 }
 
 .hero {
@@ -49,22 +51,22 @@
 }
 
 .card {
-  @apply px-3 py-2 flex col-span-8 sm:col-span-4 md:col-span-4 border flex-row shadow-sm rounded-md border-slate-300 gap-4 items-center;
-  box-shadow: 2px 2px #575f6f;
+  @apply px-3 py-2 border flex flex-col justify-center shadow-sm rounded-md border-slate-300 gap-4 items-center;
+  box-shadow: 8px 8px #002236;
 }
 .ssdow {
-  box-shadow: 4px 4px #002236;
+  box-shadow: 8px 8px #002236;
 }
 .project {
-  @apply bg-white border rounded-md flex flex-col justify-start relative;
-  box-shadow: 4px 4px #002236;
+  @apply bg-white border rounded-md flex flex-col justify-start relative dark:bg-transparent ;
+  box-shadow: 8px 8px #002236;
 }
 
 .borderN {
-  box-shadow: 4px 4px #002236;
+  box-shadow: 8px 8px #002236;
 }
 .cardImage {
-  @apply w-16 h-16;
+  @apply w-[120px] h-[120px] my-6;
 }
 
 .icon {

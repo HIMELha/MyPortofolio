@@ -1,23 +1,26 @@
 function Projects() {
+  
   return (
-    <div className="px-[3%] py-4 bg-gradient-to-tr h-full md:min-h-[90vh] ">
-      <div className="w-full mb-6">
+    <div className="px-[5%] maxWidth py-4 hero !h-full relative">
+      <div className="grid col-span-2 mb-6 py-2">
         <h1 className="text-3xl leading-12 text-center">
-          <span className="text-[32px] bg-clip-text font-medium text-transparent bg-gradient-to-br from-slate-800 to-gray-400 ">
-            My Projects
-          </span>
+          <span className="text-[32px] headingText ">My Projects</span>
         </h1>
       </div>
-
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-2 md:gap-4 lg:gap-7">
+      <img
+        src="https://tailwindui.com/img/beams-basic.png"
+        alt=""
+        className="w-full h-screen absolute top-0 left-0 right-0 overflow-hidden -z-10"
+      />
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-5 md:gap-7 lg:gap-7">
         <div className="project">
           <img
             src="https://i.ibb.co/ThzymtS/Thank-You-For-view-my-all-projects.png"
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               RefferAi - refferal system
             </h2>
 
@@ -37,7 +40,7 @@ function Projects() {
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
             </div>
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() => window.open("https://refferai.postbd.xyz/")}
@@ -61,8 +64,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               LaraShop - simple ecommerce website
             </h2>
 
@@ -87,7 +90,7 @@ function Projects() {
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
             </div>
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() => window.open("https://postbd.xyz/pay_commerce/")}
@@ -112,8 +115,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               React & Laravel CRUD App
             </h2>
 
@@ -134,7 +137,7 @@ function Projects() {
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
             </div>
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
@@ -161,8 +164,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               Laravel blog website
             </h2>
 
@@ -180,7 +183,7 @@ function Projects() {
                 <i className="fa-solid fa-database icon"></i>MySQL
               </span>
             </div>
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
@@ -207,8 +210,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               BookStore - landing page for bookshop
             </h2>
 
@@ -227,7 +230,7 @@ function Projects() {
               </span>
             </div>
 
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
@@ -254,8 +257,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               Vehicle website landing page
             </h2>
 
@@ -271,7 +274,7 @@ function Projects() {
               </span>
             </div>
 
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
@@ -302,8 +305,8 @@ function Projects() {
             alt=""
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               Vertax Portfolio
             </h2>
 
@@ -319,7 +322,7 @@ function Projects() {
               </span>
             </div>
 
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
@@ -347,8 +350,8 @@ function Projects() {
             className="w-full rounded-tr-md lg:max-h-[240px]"
           />
 
-          <div className="flex flex-col px-3 py-2">
-            <h2 className="text-xl font-medium text-slate-800">
+          <div className="flex flex-col px-3 py-2 mb-2">
+            <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
               LTEAdmin - admin panel template
             </h2>
 
@@ -364,7 +367,7 @@ function Projects() {
               </span>
             </div>
 
-            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 pt-2.5">
+            <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 ">
               <button
                 className="btn !rounded-full"
                 onClick={() =>
