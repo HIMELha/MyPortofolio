@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="px-[5%] maxWidth py-4 hero !h-full relative">
+    <div className="px-[5%] maxWidth py-4 hero !h-full ">
       <div className="grid col-span-2 mb-6 py-2">
         <h1 className="text-3xl leading-12 text-center">
           <span className="text-[32px] headingText">Contact Me</span>

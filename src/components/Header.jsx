@@ -6,7 +6,7 @@ function Header() {
   const [nav, setNav] = useState(false);
 
   return (
-    <div className="shadow shadow-sky-300 dark:text-white dark:bg-slate-800">
+    <div className="shadow bg-transparent shadow-sky-300 dark:text-white dark:bg-slate-800">
       <header className="px-[5%] py-2 flex justify-between items-center maxWidth">
         <Link
           to="/"

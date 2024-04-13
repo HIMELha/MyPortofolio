@@ -3,11 +3,11 @@ import { FaToolbox } from "react-icons/fa6";
 
 function Home() {
   return (
-    <div className="px-[5%] py-4 hero grid md:grid-cols-2 justify-center items-center gap-8 sm:gap-0 maxWidth relative">
+    <div className="px-[5%] py-4 hero grid md:grid-cols-2 justify-center items-center gap-8 sm:gap-0 maxWidth">
       <img
         src="https://tailwindui.com/img/beams-basic.png"
         alt=""
-        className="w-full h-screen absolute top-0 left-0 right-0 overflow-hidden -z-10"
+        className="w-full h-[100vh] absolute top-0 left-0 right-0 overflow-hidden -z-10"
       />
       <div className="flex justify-start flex-col order-1 md:order-0 relative ">
         <span className="mb-3 pb-3 text-[25px] text-slate-800 dark:text-blue-200">
