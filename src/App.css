@@ -58,7 +58,7 @@
   box-shadow: 8px 8px #002236;
 }
 .project {
-  @apply bg-white border rounded-md flex flex-col justify-start relative dark:bg-transparent ;
+  @apply bg-white border rounded-md flex flex-col md:flex-row justify-start relative dark:bg-transparent hover:scale-105 transition;
   box-shadow: 8px 8px #002236;
 }
 
@@ -66,7 +66,7 @@
   box-shadow: 8px 8px #002236;
 }
 .cardImage {
-  @apply w-[120px] h-[120px] my-6;
+  @apply w-[80px] h-[80px] my-4;
 }
 
 .icon {
