@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Projects() {
   const projects = [
@@ -88,7 +88,7 @@ function Projects() {
           <span className="text-[32px] headingText ">My Projects</span>
         </h1>
       </div>
-      <div className="mb-5 flex items-center gap-3">
+      <div className="mb-5 flex justify-center flex-wrap items-center gap-3">
         <button
           className={`btn-outline transition ${
             filter === "all"
@@ -131,13 +131,13 @@ function Projects() {
           User Interface
         </button>
       </div>
-      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-5 md:gap-7 lg:gap-7">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-5 sm:gap-5 md:gap-7 lg:gap-7">
         {filteredProjects.map((project, index) => (
           <div key={index} className="project">
             <img
               src={project.imageUrl}
               alt=""
-              className="w-full rounded-tr-md lg:max-h-[240px]  md:max-w-[280px] lg:max-w-[310px]"
+              className="w-full rounded-tr-md lg:max-h-[290px]  md:max-w-[310px] lg:max-w-[330px]"
             />
             <div className="flex flex-col px-3 py-2 mb-2">
               <h2 className="text-xl font-medium text-slate-800 dark:text-slate-100">
@@ -150,7 +150,7 @@ function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 md:justify-end md:right-6 lg:right-10">
+              <div className="flex gap-4 lg:gap-1 justify-center items-center flex-wrap absolute bottom-2 left-0 right-0 lg:relative xl:right-10">
                 <button
                   className="btn !rounded-full"
                   onClick={() => window.open(project.previewLink)}

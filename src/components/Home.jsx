@@ -17,7 +17,8 @@ function Home() {
           <span className="headingText">I&apos;m Himel Hasan</span>
         </h1>
         <p className="text-[18px] text-slate-800 mt-3 dark:text-white">
-          a web developer specializing in Laravel, ReactJS, and Tailwind CSS.
+          A passionate web developer specializing in Laravel, ReactJS, and
+          Tailwind CSS.
         </p>
         <p className="text-[18px] text-slate-800 mt-3 dark:text-white">
           I&apos;m passionate about crafting elegant and efficient solutions for

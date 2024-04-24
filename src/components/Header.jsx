@@ -47,7 +47,7 @@ function Header() {
           <ul className="flex flex-col justify-center items-center gap-8 bg-white dark:bg-gradient-to-bl  dark:to-slate-800 overflow-hidden fixed top-0 bottom-0 left-0 right-0 z-10 sm:hidden">
             <button
               onClick={() => setNav(false)}
-              className="btn-outline sm:hidden absolute top-2 right-[5%] w-[42px] h-[42px]"
+              className="sm:hidden absolute top-[10px] right-[5%] btn-auto"
             >
               <i className="fa-solid fa-xmark"></i>
             </button>
@@ -82,16 +82,13 @@ function Header() {
         )}
 
         <div className="flex gap-4 sm:gap-3 items-center">
-          <Link to='/contact'>
+          <Link to="/contact">
             <button className="btn !py-[6px]">Contact Me</button>
           </Link>
 
           <DarkModeToggle />
-          <button
-            onClick={() => setNav(true)}
-            className="btn-outline !border-[1px] shadow sm:hidden"
-          >
-            <i className="fa-solid fa-bars-staggered"></i>
+          <button onClick={() => setNav(true)} className="btn-auto">
+            <i className="mx-auto fa-solid fa-bars-staggered"></i>
           </button>
         </div>
       </header>

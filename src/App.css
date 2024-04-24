@@ -25,7 +25,9 @@
 .btn-outline {
   @apply px-3 py-2 border-[2px] border-slate-500 text-[15px] text-slate-800 rounded  dark:text-white dark:border-gray-300 hover:text-slate-900 hover:shadow;
 }
-
+.btn-auto {
+  @apply ease-in w-[35px] h-[35px] flex items-center justify-center rounded hover:ring-[5px] hover:ring-slate-200 text-[15px] border border-gray-700 bg-transparent dark:bg-transparent dark:text-white dark:border-slate-200 sm:hidden
+}
 .headingText {
   @apply text-[40px] font-medium bg-clip-text text-transparent bg-gradient-to-br from-sky-600 to-green-600 dark:from-sky-400 dark:to-slate-500
 }

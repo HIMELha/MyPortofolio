@@ -94,7 +94,7 @@ function Skills() {
           <span className="text-[32px] headingText">My Skills</span>
         </h1>
       </div>
-      <div className="mb-5 flex items-center gap-3">
+      <div className="mb-5 flex justify-center flex-wrap items-center gap-3">
         <button
           className={`btn-outline transition ${
             filter === "all"

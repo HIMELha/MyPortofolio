@@ -18,7 +18,9 @@ function About() {
           foundation in web development, I specialize in creating robust and
           scalable applications using the Laravel framework.
         </p>
-        <span className="text-[22px] font-medium textGradient mt-3">What I Do</span>
+        <span className="text-[22px] font-medium textGradient mt-3">
+          What I Do
+        </span>
         <p className="text-[17px] text-slate-800 dark:text-gray-200 mt-1">
           I love turning ideas into reality through code. My expertise lies in
           crafting elegant solutions with Laravel, whether it&apos;s building
@@ -52,17 +54,17 @@ function About() {
           className="rounded-md w-[300px] h-[300px] md:w-[380px] md:h-[380px]  shadow-slate-500 shadow-md borderN"
         />
         <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-10">
-          <button className="social-btn bg-blue-500">
+          <button className="social-btn bg-blue-500 border hover:bg-white hover:text-blue-500 borderN">
             <i className="fa-brands fa-facebook  text-xl"></i>
           </button>
-          <button className="social-btn bg-sky-500">
+          <button className="social-btn bg-sky-500 border hover:bg-white hover:text-sky-500 borderN">
             <i className="fa-brands fa-twitter text-xl"></i>
           </button>
-          <button className="social-btn bg-green-600">
+          <button className="social-btn bg-green-600 border hover:bg-white hover:text-green-500 borderN">
             <i className="fa-brands fa-whatsapp text-xl"></i>
           </button>
 
-          <button className="social-btn bg-slate-700">
+          <button className="social-btn bg-slate-700 border hover:bg-white hover:text-slate-500 borderN">
             <i className="fa-brands fa-github text-xl"></i>
           </button>
         </div>

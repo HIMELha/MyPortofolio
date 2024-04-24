@@ -16,14 +16,7 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className={`ease-in w-[40px] h-[40px] flex items-center justify-center rounded hover:ring-[5px] hover:ring-slate-200 text-[20px] border ${
-        isDarkMode
-          ? "bg-transparent border-white text-white"
-          : " bg-white text-black border border-gray-700"
-      }`}
-    >
+    <button onClick={toggleDarkMode} className={`btn-auto sm:flex`}>
       {isDarkMode ? (
         <MdWbSunny style={{ fontSize: "17px" }} />
       ) : (
