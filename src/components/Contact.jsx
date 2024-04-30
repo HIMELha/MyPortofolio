@@ -65,22 +65,26 @@ function Contact() {
           </form>
         </div>
 
-        <div className="w-[90%] xs:w-[80%] sm:w-[300px] mx-auto my-6">
-          <h2 className="text-xl text-center font-medium text-slate-800 dark:text-slate-100">
-            You also can find me here
+        <div className="w-[90%] xs:w-[80%] md:max-w-[500px] mx-auto my-6">
+          <h2 className="text-xl text-start font-medium text-slate-800 dark:text-slate-100">
+            Seeking assistance with your project? As a dedicated and proficient
+            developer, I offer comprehensive services including project
+            completion, task execution, and optimization. Feel free to reach out
+            to me for any of your needs.
           </h2>
-          <div className="flex justify-center items-center gap-4 mt-4">
-            <button className="social-btn bg-blue-500">
+
+          <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-10">
+            <button className="social-btn bg-blue-500 border hover:bg-white hover:text-blue-500 borderN">
               <i className="fa-brands fa-facebook  text-xl"></i>
             </button>
-            <button className="social-btn bg-sky-500">
+            <button className="social-btn bg-sky-500 border hover:bg-white hover:text-sky-500 borderN">
               <i className="fa-brands fa-twitter text-xl"></i>
             </button>
-            <button className="social-btn bg-green-600">
+            <button className="social-btn bg-green-600 border hover:bg-white hover:text-green-500 borderN">
               <i className="fa-brands fa-whatsapp text-xl"></i>
             </button>
 
-            <button className="social-btn bg-slate-700">
+            <button className="social-btn bg-slate-700 border hover:bg-white hover:text-slate-500 borderN">
               <i className="fa-brands fa-github text-xl"></i>
             </button>
           </div>

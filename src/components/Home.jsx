@@ -1,7 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import prfileImage from "../assets/profile.png";
 import { FaToolbox } from "react-icons/fa6";
 
 function Home() {
+  const history = useNavigate();
+
+  const navigate = (url) => {
+    history(url);
+  };
+
   return (
     <div className="px-[5%] py-4 hero grid md:grid-cols-2 justify-center items-center gap-8 sm:gap-0 maxWidth">
       <img
@@ -42,7 +49,10 @@ function Home() {
         </div> */}
 
         <div className="flex gap-4 mt-4 mx-auto md:mx-0">
-          <button className="btn w-[140px] flex flex-row justify-center items-center gap-2 disabled">
+          <button
+            onClick={() => navigate("/contact")}
+            className="btn w-[140px] flex flex-row justify-center items-center gap-2 disabled"
+          >
             <FaToolbox /> <p>Hire me</p>
           </button>
           <button className="btn-outline w-[140px] disabled">

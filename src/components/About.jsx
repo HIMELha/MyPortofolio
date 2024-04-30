@@ -1,5 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import prfileImage from "../assets/image.jpg";
 function About() {
+  const history = useNavigate();
+
+  const navigate = (url) => {
+    history(url);
+  };
   return (
     <div className="px-[5%] maxWidth py-4 hero !h-full grid lg:grid-cols-2 items-start justify-center">
       <div className="grid col-span-2 mb-6 py-2">
@@ -45,6 +51,15 @@ function About() {
           success. Let&apos;s connect and achieve your goals together. <br />{" "}
           I&apos;m busy now to escape from the toxic society and toxic peoples
         </span> */}
+
+        <div className="flex-center mt-5 mx-auto !gap-3">
+          <button className="btn mr-3" onClick={() => navigate("/projects")}>
+            Discover Innovation
+          </button>
+          <button className="btn-outline " onClick={() => navigate("/contact")}>
+            Get Started
+          </button>
+        </div>
       </div>
 
       <div className="grid col-span-2 lg:col-span-1 justify-center relative order-0 ">

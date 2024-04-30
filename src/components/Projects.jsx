@@ -3,38 +3,47 @@ import { useState } from "react";
 function Projects() {
   const projects = [
     {
-      title: "RefferAi - refferal system",
-      imageUrl:
-        "https://i.ibb.co/ThzymtS/Thank-You-For-view-my-all-projects.png",
-      category: "fullstack",
-      tags: ["HTML", "TailwindCSS", "PHP", "MySQL"],
-      previewLink: "https://refferai.postbd.xyz/",
-      githubLink: "https://github.com/HIMELha/refferAi",
-    },
-    {
-      title: "LaraShop - simple ecommerce website",
-      imageUrl:
-        "https://i.ibb.co/4dnsbfx/Thank-You-For-view-my-all-projects-1.png",
-      category: "fullstack",
-      tags: ["HTML", "TailwindCSS", "Javascript", "Jquery", "Laravel", "MySQL"],
-      previewLink: "https://postbd.xyz/pay_commerce/",
-      githubLink: "https://github.com/HIMELha/Laravel_Ecommerce",
-    },
-    {
       title: "React & Laravel CRUD App",
       imageUrl: "https://i.ibb.co/s69RFmd/Untitled-design.png",
       category: "fullstack",
       tags: ["HTML", "TailwindCSS", "Laravel", "ReactJS", "MySQL"],
-      previewLink: "https://react-crud-lilac.vercel.app/",
+      previewLink: "https://taskappe.vercel.app/",
       githubLink: "https://github.com/HIMELha/ReactCrud",
     },
     {
-      title: "Laravel blog website",
-      imageUrl: "https://i.ibb.co/SBY5Kq7/Untitled-design-6.png",
+      title: "LotoBD - simple ecommerce website",
+      imageUrl:
+        "https://i.ibb.co/4dnsbfx/Thank-You-For-view-my-all-projects-1.png",
       category: "fullstack",
-      tags: ["HTML", "Laravel", "TailwindCSS", "MySQL"],
-      previewLink: "https://postbd.xyz/laratail/public/home",
-      githubLink: "https://github.com/HIMELha/Laratail",
+      tags: ["HTML", "TailwindCSS", "Jquery", "Laravel", "MySQL"],
+      previewLink: "https://postbd.xyz/pay_commerce/",
+      githubLink: "https://github.com/HIMELha/Laravel_Ecommerce",
+    },
+    {
+      title: "AnyBringr Shop",
+      imageUrl:
+        "https://i.ibb.co/KhfRsLq/Powerful-technology-to-build-and-innovate-2.png",
+      category: "client",
+      tags: ["HTML", "TailwindCSS", "Jquery", "Laravel", "MySQL"],
+      previewLink: "https://anybringr.com/",
+      githubLink: "https://anybringr.com/",
+    },
+    {
+      title: "FacdCab - Stall Booking System",
+      imageUrl:
+        "https://i.ibb.co/VHj2qsb/I-will-Install-any-codecanyon-project-on-cpanel-4.png",
+      category: "client",
+      tags: ["HTML", "Bootstrap", "Jquery", "Laravel", "MySQL"],
+      previewLink: "https://facdcabsyl.com/",
+      githubLink: "https://facdcabsyl.com/",
+    },
+    {
+      title: "LTEAdmin - admin panel template",
+      imageUrl: "https://i.ibb.co/99Gs6Wr/Untitled-design-4.png",
+      category: "ui",
+      tags: ["HTML", "TailwindCSS", "Javascript"],
+      previewLink: "https://himelha.github.io/adminLte/src/",
+      githubLink: "https://github.com/HIMELha/adminLte",
     },
     {
       title: "BookStore - landing page for bookshop",
@@ -47,26 +56,18 @@ function Projects() {
     {
       title: "Vehicle website landing page",
       imageUrl: "https://i.ibb.co/wBT4sGc/Untitled-design-2.png",
-      category: "fullstack",
+      category: "ui",
       tags: ["HTML", "Vanila CSS", "Javascript"],
       previewLink: "https://himelha.github.io/vehicles-Landing-Page/",
       githubLink: "https://github.com/HIMELha/vehicles-Landing-Page",
     },
     {
-      title: "Vertax Portfolio",
+      title: "Simple Portfolio",
       imageUrl: "https://i.ibb.co/g97vrs3/Untitled-design-7.png",
       category: "ui",
       tags: ["HTML", "Vanila CSS", "Javascript"],
       previewLink: "https://himelha.github.io/portfolio/",
       githubLink: "https://github.com/HIMELha/portfolio",
-    },
-    {
-      title: "LTEAdmin - admin panel template",
-      imageUrl: "https://i.ibb.co/99Gs6Wr/Untitled-design-4.png",
-      category: "ui",
-      tags: ["HTML", "TailwindCSS", "Javascript"],
-      previewLink: "https://himelha.github.io/adminLte/src/",
-      githubLink: "https://github.com/HIMELha/adminLte",
     },
   ];
 
@@ -108,7 +109,7 @@ function Projects() {
           }`}
           onClick={() => handleFilterChange("fullstack")}
         >
-          FullStack Website
+          FullStack
         </button>
         <button
           className={`btn-outline transition ${
@@ -118,7 +119,7 @@ function Projects() {
           }`}
           onClick={() => handleFilterChange("client")}
         >
-          Client works
+          Client
         </button>
         <button
           className={`btn-outline transition ${
@@ -128,7 +129,7 @@ function Projects() {
           }`}
           onClick={() => handleFilterChange("ui")}
         >
-          User Interface
+          UI Design
         </button>
       </div>
       <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-1 xl:grid-cols-2 gap-5 sm:gap-5 md:gap-7 lg:gap-7">

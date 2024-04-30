@@ -10,7 +10,7 @@ function Header() {
       <header className="px-[5%] py-2 flex justify-between items-center maxWidth">
         <Link
           to="/"
-          className="text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-blue-700 to-slate-800 dark:text-sky-300"
+          className="text-[22px] sm:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-blue-700 to-slate-800 dark:text-sky-300"
           style={{ fontFamily: "Jost" }}
         >
           Himel Hasan
@@ -81,7 +81,7 @@ function Header() {
           </ul>
         )}
 
-        <div className="flex gap-4 sm:gap-3 items-center">
+        <div className="flex gap-2 sm:gap-3 items-center">
           <Link to="/contact">
             <button className="btn !py-[6px]">Contact Me</button>
           </Link>
