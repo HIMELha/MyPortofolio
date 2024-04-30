@@ -1,4 +1,8 @@
 function Contact() {
+  const redirectClient = (url) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <div className="px-[5%] maxWidth py-4 hero !h-full ">
       <div className="grid col-span-2 mb-6 py-2">
@@ -74,17 +78,32 @@ function Contact() {
           </h2>
 
           <div className="flex justify-center gap-4 mt-5 md:mt-7 lg:mt-10">
-            <button className="social-btn bg-blue-500 border hover:bg-white hover:text-blue-500 borderN">
-              <i className="fa-brands fa-facebook  text-xl"></i>
+            <button
+              onClick={() =>
+                redirectClient("https://www.facebook.com/webhimel032")
+              }
+              className="social-btn bg-blue-500 border hover:bg-white hover:text-blue-500 borderN"
+            >
+              <i className="fa-brands fa-facebook text-xl"></i>
             </button>
-            <button className="social-btn bg-sky-500 border hover:bg-white hover:text-sky-500 borderN">
-              <i className="fa-brands fa-twitter text-xl"></i>
+            <button
+              onClick={() =>
+                redirectClient("https://www.linkedin.com/in/himelhasan002")
+              }
+              className="social-btn bg-sky-500 border hover:bg-white hover:text-sky-500 borderN"
+            >
+              <i className="fa-brands fa-linkedin text-xl"></i>
             </button>
-            <button className="social-btn bg-green-600 border hover:bg-white hover:text-green-500 borderN">
+            <button
+              onClick={() => redirectClient("https://wa.me/8801747760521")}
+              className="social-btn bg-green-600 border hover:bg-white hover:text-green-500 borderN"
+            >
               <i className="fa-brands fa-whatsapp text-xl"></i>
             </button>
-
-            <button className="social-btn bg-slate-700 border hover:bg-white hover:text-slate-500 borderN">
+            <button
+              onClick={() => redirectClient("https://github.com/HIMELha")}
+              className="social-btn bg-slate-700 border hover:bg-white hover:text-slate-500 borderN"
+            >
               <i className="fa-brands fa-github text-xl"></i>
             </button>
           </div>
