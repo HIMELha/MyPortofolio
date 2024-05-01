@@ -1,7 +1,6 @@
 import { useState } from "react";
 import http from "../http";
-import { toast } from "react-toastify";
-
+import toastr from "toastr";
 const Contact = () => {
   const [formData, setFormData] = useState({
     subject: "",
@@ -25,21 +24,21 @@ const Contact = () => {
       const response = await http.post("/send/email", formData);
 
       if (response.status !== 200) {
-        toast.warning(response.data.errors[0], {
-          autoClose: 5000, // auto dismiss after 5 seconds
-          position: toast.POSITION.TOP_CENTER,
+        toastr.warning(response.data.errors[0], {
+          timeOut: 5000, // auto dismiss after 5 seconds
+          positionClass: "toast-top-center",
         });
       } else {
-        toast.success("Email sent successfully", {
-          autoClose: 5000, // auto dismiss after 5 seconds
-          position: toast.POSITION.TOP_CENTER,
+        toastr.success("Email sent successfully", {
+          timeOut: 5000, // auto dismiss after 5 seconds
+          positionClass: "toast-top-center",
         });
         setFormData({ subject: "", email: "", message: "" });
       }
     } catch (error) {
-      toast.error("Oops! Something went wrong", {
-        autoClose: 5000, // auto dismiss after 5 seconds
-        position: toast.POSITION.TOP_CENTER,
+      toastr.error("Oops! Something went wrong", {
+        timeOut: 5000, // auto dismiss after 5 seconds
+        positionClass: "toast-top-center",
       });
     } finally {
       setLoading(false); // Set loading to false when request completes
