@@ -55,7 +55,13 @@ function Home() {
           >
             <FaToolbox /> <p>Hire me</p>
           </button>
-          <button className="btn-outline w-[140px] disabled">
+          <button
+            className="btn-outline w-[140px] disabled"
+            onClick={() => {
+              window.location.href =
+                "https://drive.google.com/file/d/149VGvQrIYQ3ZvQjYaTw8EOLh7kcG5KLc/view?usp=drive_link";
+            }}
+          >
             <i className="fa-regular fa-file-lines mr-2"></i>Download CV
           </button>
         </div>
