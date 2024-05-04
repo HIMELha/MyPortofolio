@@ -8,7 +8,7 @@ function Projects() {
       category: "fullstack",
       tags: ["HTML", "TailwindCSS", "Laravel", "ReactJS", "MySQL"],
       previewLink: "https://taskappe.vercel.app/",
-      githubLink: "https://github.com/HIMELha/ReactCrud",
+      githubLink: "https://github.com/HIMELha/TaskApp",
     },
     {
       title: "LotoBD - simple ecommerce website",
@@ -16,7 +16,7 @@ function Projects() {
         "https://i.ibb.co/4dnsbfx/Thank-You-For-view-my-all-projects-1.png",
       category: "fullstack",
       tags: ["HTML", "TailwindCSS", "Jquery", "Laravel", "MySQL"],
-      previewLink: "https://postbd.xyz/pay_commerce/",
+      previewLink: "https://lotobd.webhex.xyz/",
       githubLink: "https://github.com/HIMELha/Laravel_Ecommerce",
     },
     {
